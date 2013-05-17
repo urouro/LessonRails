@@ -1,0 +1,9 @@
+<% if @members.present? %>
+<% @members.each do |member| %>
+<%= member.name %>
+<%= member.age %>
+<br />
+<% end %>
+<% else %>
+メンバーがいない
+<% end %>
